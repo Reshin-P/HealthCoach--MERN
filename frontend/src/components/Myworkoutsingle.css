@@ -1,0 +1,7 @@
+.program-Right {
+    /* border: 3px green solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+}

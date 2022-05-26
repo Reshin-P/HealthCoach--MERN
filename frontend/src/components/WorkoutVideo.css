@@ -1,0 +1,35 @@
+.workout_video1 {
+  /* border: 1px solid red; */
+  height: 450px;
+}
+
+.workout_video2 {
+  margin-top: 5%;
+  /* border: 1px solid red; */
+  height: 450px;
+  height: 350px;
+  background-color: rgb(32, 32, 48);
+}
+
+.workout_inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  border: 3px solid rgb(245, 245, 245);
+}
+
+.workout_inner_Right {
+  margin: 5%;
+  color: white;
+}
+
+.Buy-btn {
+  height: 50px;
+  width: 80px;
+
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+export const PROGRAM_HEADING = "Fitness Programs"
+export const FREE_WORKOUTS = "Free Workouts"
+export const PROGRAMS = "Programs"
+export const WORKOUTS = "Workouts"
+export const BLOG = "Blog"
+export const ABOUT = "About"
+export const LOGOUT = "Logout"
+export const MY_PROFILE = "My Profile"
+export const MY_WORKOUTS = "My Workouts"
+export const TRAINER_HEADING = "Famous Trainer"
+export const TRAINER = 'Trainer'

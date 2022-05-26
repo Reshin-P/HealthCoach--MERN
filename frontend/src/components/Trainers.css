@@ -1,0 +1,48 @@
+.trainer-details {
+    width: 260px;
+}
+
+.trainer-img {
+    border-radius: 50%;
+    height: 300px;
+    top: 90px;
+    z-index: 3
+}
+
+.trainer,
+.trainer-img {
+    position: relative;
+    width: 300px
+}
+
+.trainer {
+    background-color: #f3f2ee;
+    border: 1px solid #000;
+    height: 500px
+}
+
+.trainer-details {
+    border: 1px solid #d22;
+    height: 400px;
+    position: relative;
+    width: 210px
+}
+
+.trainer-card {
+    align-items: center;
+    width: 300px
+}
+
+.trainer-details {
+    width: 260px
+}
+
+
+.streams {
+    color: #d22;
+    border: #d22 solid 3px;
+}
+
+.stream-name {
+    color: #d22;
+}

@@ -1,0 +1,56 @@
+.trainer-container {
+
+    /* border: 2px solid rgb(5, 240, 5); */
+    height: auto !important;
+
+}
+
+.trainer_details_header {
+
+    /* border: 1px solid black; */
+    display: flex;
+    height: auto;
+
+}
+
+.Trainer_S_image {
+    margin-left: 5%;
+    border-radius: 50%;
+    height: 300px;
+}
+
+.Traiener_Name {
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+.Trainer_Innner_Box {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: auto;
+
+
+}
+
+.Trainer_About {
+    margin-top: 5%;
+    /* border: 1px solid blue; */
+    width: 95%;
+    line-height: 2;
+    height: auto;
+
+
+}
+
+.About_Content {
+    font-size: larger;
+    font-style: italic;
+    line-height: 2;
+    height: auto;
+}
+
+.Certifications {
+    font-family: sans-serif;
+    color: brown;
+}

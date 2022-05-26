@@ -1,0 +1,68 @@
+.Diet1 {
+    /* border:  2px solid greenyellow; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Diet2 {
+    /* border:  2px solid rgb(255, 0, 0); */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.diet_row {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.diet_description {
+    width: 95%;
+
+}
+
+.imagebox {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.connect {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+}
+
+.btn1 {
+    height: 60px;
+    background-color: #1A73E8 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.btn2 {
+    height: 60px;
+    background-color: #FFFC00 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    width: 100%;
+
+}
+
+.btn3 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    height: 60px;
+    background-color: #25D366 !important;
+}
+
+.link-btn {
+
+    text-decoration: none;
+    text-decoration-line: none;
+
+}

@@ -1,0 +1,61 @@
+.paymentcontainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+
+}
+
+.col1 {
+    height: auto;
+    min-height: 300px;
+
+
+}
+
+
+.mainrow {
+
+
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 2px solid rgb(16, 231, 34); */
+
+
+
+}
+
+.workout {
+    margin-top: 15%;
+    text-align: center;
+    height: auto;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.maintable {
+    height: auto;
+    background-color: #a3a390;
+
+}
+
+.tbody {
+    height: 200px;
+}
+
+.btn-div {
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-inn {
+    display: flex;
+    justify-content: center;
+}

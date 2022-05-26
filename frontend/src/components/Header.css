@@ -1,0 +1,53 @@
+.trainer-img {
+    top: 90px;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    
+   
+    /* border: 1px solid black; */
+
+
+    border-radius: 50%;
+    z-index: 3;
+
+
+}
+
+.trainer{
+    background-color: #f3f2ee;
+    position: relative;
+border: 1px solid black;
+ width: 300px;
+ height: 500px;
+}
+.trainer-details{
+    position: relative;
+    border: 1px solid rgb(221, 34, 34);
+    width: 210px;
+    height: 400px;
+
+}
+.trainer-card{
+   
+
+    width: 300px;
+    align-items: center;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 100px;
+    
+}
+.main_header{
+    background-color: rgb(255, 255, 255) !important;
+   
+  
+}
+.username{
+    margin-right: 10px !important;
+    color: red;
+font-size: 20px !important;
+}

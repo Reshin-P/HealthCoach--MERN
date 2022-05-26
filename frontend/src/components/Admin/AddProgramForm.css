@@ -1,0 +1,45 @@
+.div1 {
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: center;
+}
+
+.div2 {
+    border: 1px solid rgb(97, 94, 91);
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: red 2px solid; */
+}
+
+.div4 {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div3 {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid goldenrod; */
+    width: 50%;
+}
+
+.addbtn {
+
+    margin-left: 40%;
+    width: 15%;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    margin-top: 60px;
+    margin-bottom: 10%;
+}
+
+.maincontainer {
+    min-height: 800px;
+}

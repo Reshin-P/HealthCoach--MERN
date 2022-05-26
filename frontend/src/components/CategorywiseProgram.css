@@ -1,0 +1,41 @@
+/* .SingleProgram{
+    width: 100%;
+    height: 300px;
+    border: solid 2px rgb(228, 221, 221);
+    display: flex;
+}
+
+.ProgramVideo{
+    width: 80%;
+    height: 70%;
+    border: 2px solid red;
+    margin-top: 4%;
+    margin-left: 5%
+}
+
+.programLeft{
+    border: 2px solid greenyellow;
+    width: 35%;
+    height: 100%;
+}
+.programName{
+    margin-left: 30%;
+    margin-top: 5%;
+    color: red;
+}
+
+.Program-Description{
+    font-style: italic;
+   font-size: large;
+    border: 2px solid blue;
+    width: 60%;
+    margin-left: 2%;
+
+
+}
+.program-Right{
+  margin-top: 6%;
+  margin-left: 2%;
+    border: 1px solid brown;
+    width: 15%;
+} */
