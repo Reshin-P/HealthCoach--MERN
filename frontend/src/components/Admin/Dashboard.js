@@ -38,7 +38,7 @@ const SidePanel = () => {
         <Container fluid className=' adminContainer' >
 
             <Row className='row'>
-                <Col className='col1' sm={2}>
+                <Col className='col1' sm={12} md={2} >
                     <div className='dashboard'>
                         <h2 className='dash-head'>Dashborard</h2>
                     </div>

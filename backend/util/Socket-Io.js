@@ -38,7 +38,7 @@ export const createSocket = (server) => {
 
     io.on("connection", (Socket) => {
 
-
+        console.log("connected");
 
         // ADD USER
 

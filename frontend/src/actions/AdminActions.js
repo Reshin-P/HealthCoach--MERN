@@ -40,6 +40,7 @@ import {
     ADD_BANNER_FAIL
 }
     from '../constances/AdminConstants'
+import { ALL_WORKOUTS_SUCESS } from '../constances/workoutConstants'
 import { PROGRAM_SUCESS } from '../constances/programConstants'
 
 // Admin Login Form
@@ -97,16 +98,27 @@ export const getAllWorkoutsAdmin = () => async (dispatch) => {
 //To Block workout
 
 
-export const blockUnblockWorkout = (id, value) => async (dispatch) => {
+export const blockUnblockWorkout = (id, value) => async (dispatch, getState) => {
     const details = { id, value }
     dispatch({
         type: WORKOUT_BLOCK_UNBLOCK_REQUEST
     })
+    const { getAllWorkouts: { allWorkouts } } = getState()
     try {
         const { data } = await axios.patch(`/workout/${id}`, details)
         dispatch({
             type: WORKOUT_BLOCK_UNBLOCK_SUCCESS,
             payload: data
+        })
+
+        dispatch({
+            type: ALL_WORKOUTS_SUCESS,
+            payload: allWorkouts.filter((data) => {
+                if (data._id === id) {
+                    data.isBlocked = !data.isBlocked
+                }
+                return data
+            })
         })
     } catch (error) {
         dispatch({
@@ -126,10 +138,13 @@ export const getAllTrainers = () => async (dispatch) => {
     })
     try {
         const { data } = await axios.get('/trainers')
+
+
         dispatch({
             type: ALL_TRAINERS_SUCCESS,
             payload: data
         })
+
     } catch (error) {
         dispatch({
             type: ALL_TRAINERS_FAIL,
@@ -146,6 +161,8 @@ export const getAllTrainers = () => async (dispatch) => {
 export const blockUnblockTrainers = (id, value) => async (dispatch, getState) => {
 
     const { adminVerify: { adminInfo } } = getState();
+    const { getAlltrainers: { trainers } } = getState()
+
     const config = {
         headers: {
             'Content-Type': 'application/json',
@@ -156,6 +173,15 @@ export const blockUnblockTrainers = (id, value) => async (dispatch, getState) =>
 
     dispatch({
         type: TRAINER_BLOCK_UNBLOCK_REQUEST
+    })
+    dispatch({
+        type: ALL_TRAINERS_SUCCESS,
+        payload: trainers.filter((data) => {
+            if (data._id === id) {
+                data.isBlocked = !data.isBlocked
+            }
+            return data
+        })
     })
     try {
         const { data } = await axios.post(`/admin/trainer/${id}`, details, config)
@@ -207,7 +233,7 @@ export const getAllUsers = () => async (dispatch, getState) => {
 //To Block Unblock Users
 
 export const blockUnblockUsers = (id, value) => async (dispatch, getState) => {
-
+    const { allusers: { alluser } } = getState()
     const { adminVerify: { adminInfo } } = getState();
     const config = {
         headers: {
@@ -224,6 +250,15 @@ export const blockUnblockUsers = (id, value) => async (dispatch, getState) => {
         dispatch({
             type: USER_BLOCK_SUCCESS,
             payload: data
+        })
+        dispatch({
+            type: GET_ALL_USER_SUCCESS,
+            payload: alluser.filter((data) => {
+                if (data._id == id) {
+                    data.isBlocked = !data.isBlocked
+                }
+                return data
+            })
         })
 
     } catch (error) {

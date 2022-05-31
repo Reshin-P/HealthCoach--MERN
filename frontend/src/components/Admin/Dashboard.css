@@ -35,7 +35,6 @@
 }
 
 .tools {
-    /* border: 0.1px solid rgb(196, 193, 187); */
     font-size: x-large;
     display: flex;
     justify-content: space-between;
@@ -49,9 +48,11 @@
     color: rgb(207, 218, 218);
     margin-left: 10%;
     height: 1rem;
+    width: auto;
 }
 
 .tool2 {
+
 
     width: auto;
     display: flex;

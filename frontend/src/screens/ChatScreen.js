@@ -41,7 +41,8 @@ const ChatScreen = () => {
     }, [message]);
 
     useEffect(() => {
-        Socket.current = io("https://eshopee.online")
+        // Socket.current = io("https://eshopee.online")
+        Socket.current = io("http://localhost:5000")
         Socket.current.on("getMessage", data => {
             setArrivalMessage({
                 sender: data.senderId,
@@ -97,12 +98,12 @@ const ChatScreen = () => {
             conversationId: conversation._id,
             createdAt: new Date()
         }
-
-        // axios.post('/message', details)
-        //     .then(data => {
         setMessage([...message, details])
-        //     })
-        //     .catch((err) => console.log(err))
+        axios.post('/message', details)
+            .then(data => {
+
+            })
+            .catch((err) => console.log(err))
     }
 
     const getMessages = async () => {
@@ -132,13 +133,13 @@ const ChatScreen = () => {
 
             <Container className='msg-main-container'>
                 <Row className='online'>
-                    <Col className='online-col mt-3' sm={1} lg={1} xl={1} >
+                    <Col className='online-col mt-3' xs={2} sm={2} lg={1} xl={1} >
 
 
                         <img className='profilephoto' src={reciverPhoto}></img>
 
                     </Col>
-                    <Col className='mt-3 ' sm={2} lg={2} xl={2}>
+                    <Col className='mt-3 ' xs={2} sm={2} lg={2} xl={2}>
                         <h3 >{reciverInfo ? reciverInfo.name : "reciver"}</h3>
                         <p>Online</p>
                     </Col>

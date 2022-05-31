@@ -22,7 +22,8 @@ const HeaderTrainer = () => {
   const [trainer, setTrainer] = useState()
   const navigate = useNavigate()
   useEffect(() => {
-    const trainer = localStorage.getItem('trainer')
+    let trainer = localStorage.getItem('trainer')
+    trainer = JSON.parse(trainer)
     console.log(trainer);
     if (!trainer) {
       navigate('/trainerlogin')
@@ -230,6 +231,8 @@ const HeaderTrainer = () => {
         {/* {trainer && <Button onClick={logout} sx={{ marginRight: "9px" }} variant="outlined" >
           Logout
         </Button>} */}
+
+        {trainer && <Typography style={{ color: 'red' }} className='username'>{trainer.name}</Typography>}
 
 
         {trainer && <Box sx={{ flexGrow: 0 }}>

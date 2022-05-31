@@ -9,6 +9,7 @@ const makeMembers = ({ sender, receiver }) => [sender, receiver]
 // @access Public
 
 const createConversation = asynchandler(async (req, res) => {
+ console.log(req.body);
 
     const members = [req.body.user, req.body.trainer]
 
